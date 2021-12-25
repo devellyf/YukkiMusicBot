@@ -56,7 +56,7 @@ async def start_stream(
         final_output = await CallbackQuery.message.reply_photo(
             photo=thumb,
             caption=(
-                f"🎬<b>__Song:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Duration:__</b> {duration_min} \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤<b>__Requested by:__ </b>{CallbackQuery.from_user.mention} \n🚧<b>__Queued at:__</b> <b>#{position}!</b>"
+                f"🦋<b>__Song:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏰<b>__Duration:__</b> {duration_min} \n⚡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n🤷‍♂️<b>__Requested by:__ </b>{CallbackQuery.from_user.mention} \n🚧<b>__Queued at:__</b> <b>#{position}!</b>"
             ),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
