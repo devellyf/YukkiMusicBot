@@ -8,25 +8,25 @@ def url_markup(videoid, duration, user_id, query, query_type):
     buttons = [
         [
             InlineKeyboardButton(
-                text="❮",
+                text="⬅️",
                 callback_data=f"slider B|{query_type}|{query}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="Play Now",
+                text="𝐏𝐋𝐀𝐘",
                 callback_data=f"Yukki {videoid}|{duration}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="❯",
+                text="➡️",
                 callback_data=f"slider F|{query_type}|{query}|{user_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="🔎 More Results",
+                text="💡 𝐌𝐎𝐑𝐄 𝐑𝐄𝐒𝐔𝐋𝐓",
                 callback_data=f"Search {query}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="🗑 Close Search",
+                text="🔇𝐂𝐋𝐎𝐒𝐄",
                 callback_data=f"forceclose {query}|{user_id}",
             ),
         ],
@@ -38,11 +38,11 @@ def url_markup2(videoid, duration, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="▶️ Play Now",
+                text="𝐏𝐋𝐀𝐘",
                 callback_data=f"Yukki {videoid}|{duration}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="🗑 Close Search",
+                text="🔇𝐂𝐋𝐎𝐒𝐄",
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
         ],
@@ -67,21 +67,21 @@ def search_markup(
     buttons = [
         [
             InlineKeyboardButton(
-                text="1️⃣", callback_data=f"Yukki {ID1}|{duration1}|{user_id}"
+                text="1️", callback_data=f"Yukki {ID1}|{duration1}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="2️⃣", callback_data=f"Yukki {ID2}|{duration2}|{user_id}"
+                text="2️", callback_data=f"Yukki {ID2}|{duration2}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="3️⃣", callback_data=f"Yukki {ID3}|{duration3}|{user_id}"
+                text="3️", callback_data=f"Yukki {ID3}|{duration3}|{user_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="4️⃣", callback_data=f"Yukki {ID4}|{duration4}|{user_id}"
+                text="4️", callback_data=f"Yukki {ID4}|{duration4}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="5️⃣", callback_data=f"Yukki {ID5}|{duration5}|{user_id}"
+                text="5️", callback_data=f"Yukki {ID5}|{duration5}|{user_id}"
             ),
         ],
         [
@@ -178,7 +178,7 @@ def primary_markup(videoid, user_id, current_time, total_time):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{total_time} ------------------ {current_time}",
+                text=f"{total_time} ------------------------------------ {current_time}",
                 callback_data=f"timer_checkup_markup {videoid}|{user_id}",
             )
         ],
@@ -202,7 +202,7 @@ def timer_markup(videoid, user_id, current_time, total_time):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{total_time} ------------------ {current_time}",
+                text=f"{total_time} ---------------------------------------- {current_time}",
                 callback_data=f"timer_checkup_markup {videoid}|{user_id}",
             )
         ],
@@ -229,7 +229,7 @@ def audio_markup(videoid, user_id, current_time, total_time):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{total_time} ------------------ {current_time}",
+                text=f"{total_time} -------------------------------------------- {current_time}",
                 callback_data=f"timer_checkup_markup {videoid}|{user_id}",
             )
         ],
@@ -248,7 +248,7 @@ def audio_timer_markup_start(videoid, user_id, current_time, total_time):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{total_time} ------------------ {current_time}",
+                text=f"{total_time} ---------------------------------------------- {current_time}",
                 callback_data=f"timer_checkup_markup {videoid}|{user_id}",
             )
         ],
